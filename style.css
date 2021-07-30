@@ -1,0 +1,117 @@
+<style> 
+     body{  
+      }
+       :root
+      { 
+        --PBright:hsl(31, 77%, 52%);
+        --Dcyan: hsl(184, 100%, 22%);
+        --VDcyan: hsl(179, 100%, 13%);
+        --white: hsla(0, 0%, 100%, 0.75);
+        --grey: hsl(0, 0%, 95%);
+        --spacer:1rem;
+        --spacerm: calc(var(--spacer)*2);
+        --spacerl: calc(var(--spacer)*4);
+        --height:75%;
+        --bradiusleft:15px 0px 0px 15px;
+        --bradiusright: 0px 15px 15px 0px;
+        --bradiustop: 15px 15px 0px 0px;
+        --bradiusbottom: 0px 0px 15px 15px;
+      }
+      html, body{
+        margin:0px;
+        line-height: 1.5rem;
+        color: var(--grey);
+        height:100%;
+      }
+      body{
+        background-color:var(--grey);
+      }
+      h1{
+        display: none;
+      }
+      h2{
+        font-family:"Big Shoulders Display", cursive;
+        font-size: 3rem;
+        font-weight: lighter;
+      }
+      section p{
+        letter-spacing: 1px;
+      }
+      section{
+        font-family: 'Lexend Deca';
+        margin:0;
+        padding:0px;
+        box-sizing: border-box;
+        padding: 2rem;
+        max-width: 600px;
+        width: 25%;
+        min-height: 600px;     
+        position: relative;
+      }
+      .section1{
+        background-color: var(--PBright);
+        border-radius:var( --bradiusleft);
+      }
+      .section2{
+        background-color: var(--Dcyan);
+      }
+      .section3{
+        background-color: var(--VDcyan);
+        border-radius:var(--bradiusright);
+      }
+      button{
+        background-color: var(--grey);
+        padding: 1rem 2rem;
+        border-radius: 30px;
+        border: none;
+        font-family: 'Lexend Deca';
+        letter-spacing: 2px;
+        border:2px solid var(--grey);
+        font-weight: bold;
+        margin-top: var(--spacerl);
+        position: absolute;
+        bottom: 3rem;
+      }
+      button:hover{
+        transition-duration: 250ms;
+        background-color: transparent;
+        color: var(--grey);
+        cursor: pointer;
+      }
+      .sedan{
+        color:var(--PBright);
+      }
+      .suv{
+        color:var(--Dcyan);
+      }
+      .lux{
+        color:var(--VDcyan);
+      }
+      footer {
+        font-size: 1rem;
+        color: black;
+        text-align: center;
+      }
+      main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;  
+      }
+      @media(max-width:900px){
+          main{
+            flex-wrap:wrap;
+            padding: var(--spacerl) 0.5rem;
+            height: auto;  
+            }
+           .section1{     
+              border-radius: var(--bradiustop);
+            }
+           .section3{
+            border-radius:var(--bradiusbottom);
+            }
+            section{
+              width: 100%;
+            }     
+         }  
+</style>
